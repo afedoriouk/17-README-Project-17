@@ -1,4 +1,4 @@
-# REGEX and its' use in codin and web develoment
+# REGEX and its' use in coding and web develoment
 Regular Expressions - REGEX
 
 Regular Expressions is a platfom for matching and verificatrion of data which is presented in the form or sequence of several characters that specify a search pattern in the text.
