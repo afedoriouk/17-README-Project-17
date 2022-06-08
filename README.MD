@@ -53,9 +53,17 @@ The method "regexp.test(str)" returns true if there’s at least one match, othe
 
 ## Regex Components
 ### Anchors
+Anchors (atomic zero-width assertions) cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. 
+\A	The match must occur at the start of the string.	\A\d{3}	  "901" in "901-333-"
+\z	The match must occur at the end of the string.	-\d{3}\z	  "-333" in "-901-333"
 ### Quantifiers
+A quantifier specifies how many instances of the previous element must be present in the input string for a match to occur.
+*	Matches the previous element zero or more times.	Patern:\d*\.\d	   Matches: ".0", "19.9", "219.9"
++	Matches the previous element one or more times.	Patern: "be+"	  Matches: "bee" in "been", "be" in "bent"
+{ n ,}	Matches the previous element at least n times.	Patern: "\d{2,}"	Matches: "166", "29", "1930"
 ### OR Operator
 ### Character Classes
+The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit "4", but not "44".
 ### Flags
 Regular expressions may have flags that affect the search.
 A regular expression consists of a pattern and optional flags: g, i, m, u, s, y.
@@ -69,9 +77,10 @@ Without flags and special symbols, the search by a regexp is the same as a subst
 
 ### Grouping and Capturing
 ### Bracket Expressions
+Bracket expression is a method in regex that is going to match specific characters or paterns. For example: (alphabetic, numeric, special, symbols). All of the characters are defined with the brackets around the characters that presented for the match.
 Bracket Expression: []
 Code Snipet: [a-l0-9]
-Description: Bracket expression is a method in regex that is going to match specific characters or paterns. For example: (alphabetic, numeric, special, symbols). All of the characters are defined with the brackets around the characters that presented for the match.
+
 
 ### Greedy and Lazy Match
 ### Boundaries
@@ -81,20 +90,7 @@ Description: Bracket expression is a method in regex that is going to match spec
 
 https://github.com/afedoriouk
 
-AS A web development student
-I WANT a tutorial explaining a specific regex
-SO THAT I can understand the search pattern the regex defines
-
-GIVEN a regex tutorial
-WHEN I open the tutorial
-THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
-WHEN I click on the links in the table of contents
-THEN I am taken to the corresponding sections of the tutorial
-WHEN I read through each section of the tutorial
-THEN I find a detailed explanation of what a specific component of the regex does
-WHEN I reach the end of the tutorial
-THEN I find a section about the author and a link to the author’s GitHub profile
-
+As a web development student I would like a tutorial explaining a specific regex concepts. 
 
 ## EXAMPLES
 Matching a Hex Value – /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
