@@ -79,13 +79,21 @@ A quantifier specifies how many instances of the previous element must be presen
 The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit "4", but not "44".
 ### Flags
 Regular expressions may have flags that affect the search.
+
 A regular expression consists of a pattern and optional flags: g, i, m, u, s, y.
+
 Without flags and special symbols, the search by a regexp is the same as a substring search.
+
 "i" With this flag the search is case-insensitive: no difference between A and a
+
 "g" With this flag the search looks for all matches, without it – only the first match is returned.
+
 "m" Multiline mode
+
 "s" Enables “dotall” mode, that allows a dot . to match newline character \n
+
 "u"Enables full Unicode support. The flag enables correct processing of surrogate pairs. 
+
 "y" “Sticky” mode: searching at the exact position in the text
 
 ### Bracket Expressions
