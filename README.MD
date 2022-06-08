@@ -36,7 +36,7 @@ match email addresses:
 
 "alternation" \. = (.) actual dot
 
-## Regular Expressions USED FOR FORM VALIDATION
+## Regular Expressions Used for Form validation
 If the address is missing "@" symbol or Upper or lower case of the letters...etc Regular Expressions Validation will return false.
 
 ## Capturing Roots
