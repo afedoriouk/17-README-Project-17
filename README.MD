@@ -34,7 +34,9 @@ l[yi]nk = any characters with "lynk" and "link"
 ## Summary
 
 The method "str.match(regexp)" looks for matches: all of them if there’s g flag, otherwise, only the first one.
+
 The method "str.replace(regexp, replacement)" replaces matches found using regexp with replacement: all of them if there’s g flag, otherwise only the first one.
+
 The method "regexp.test(str)" returns true if there’s at least one match, otherwise, it returns false.
 ## Table of Contents
 
