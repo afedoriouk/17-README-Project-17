@@ -17,8 +17,8 @@ Regular Expressions is widely used to validate phone numbers email addresses web
 
 . Dot= any charachter
 
-* Star= "wild card"
-* 
+.* Star= "wild card"
+ 
 [a-z]=any character a through z
 
 [^a-z] {3} = any three numbers 
