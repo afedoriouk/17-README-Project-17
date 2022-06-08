@@ -71,8 +71,11 @@ Anchors (atomic zero-width assertions) cause a match to succeed or fail dependin
 \z	The match must occur at the end of the string.	-\d{3}\z	  "-333" in "-901-333"
 ### Quantifiers
 A quantifier specifies how many instances of the previous element must be present in the input string for a match to occur.
-*	Matches the previous element zero or more times.	Patern:\d*\.\d	   Matches: ".0", "19.9", "219.9"
-+	Matches the previous element one or more times.	Patern: "be+"	  Matches: "bee" in "been", "be" in "bent"
+
+.*	Matches the previous element zero or more times.	Patern:\d*\.\d	   Matches: ".0", "19.9", "219.9"
+
+.+	Matches the previous element one or more times.	Patern: "be+"	  Matches: "bee" in "been", "be" in "bent"
+
 { n ,}	Matches the previous element at least n times.	Patern: "\d{2,}"	Matches: "166", "29", "1930"
 
 ### Character Classes
