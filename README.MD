@@ -12,23 +12,22 @@ Regular Expressions is widely used to validate phone numbers email addresses web
 (?)\d{3}[-.)]\d{3}[-.] \d{4}
 
 .* button (DOT STAR)
-. Dot= any charachter
-* Star= "wild card"
+ . Dot= any charachter
+ * Star= "wild card"
 [a-z]=any character a through z
-[^a-z] {3}= any three numbers 
-^=anything but the selected characters
-[A-Z] look for only capital letters
+[^a-z] {3} = any three numbers 
+^= anything but the selected characters
+[A-Z] = look for only capital letters
 \b[A-Za-z]{4}\b this expression means that this is matching four letter words with ONLY capital or lower case letters
 \w = inludes letters and numbers
 match email addresses:
 [\w]+@\w+\.(net|com|edu)
 "alternation" \. = (.) actual dot
-charachter class
 
-Regular Expressions USED FOR FORM VALIDATION
+## Regular Expressions USED FOR FORM VALIDATION
 If the address is missing "@" symbol or Upper or lower case of the letters...etc Regular Expressions Validation will return false.
 
-Capturing Roots
+## Capturing Roots
 validating speliing characters
 l[yi]nk = any characters with "lynk" and "link"
 
@@ -61,7 +60,7 @@ A quantifier specifies how many instances of the previous element must be presen
 *	Matches the previous element zero or more times.	Patern:\d*\.\d	   Matches: ".0", "19.9", "219.9"
 +	Matches the previous element one or more times.	Patern: "be+"	  Matches: "bee" in "been", "be" in "bent"
 { n ,}	Matches the previous element at least n times.	Patern: "\d{2,}"	Matches: "166", "29", "1930"
-### OR Operator
+
 ### Character Classes
 The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit "4", but not "44".
 ### Flags
@@ -75,17 +74,12 @@ Without flags and special symbols, the search by a regexp is the same as a subst
 "u"Enables full Unicode support. The flag enables correct processing of surrogate pairs. 
 "y" “Sticky” mode: searching at the exact position in the text
 
-### Grouping and Capturing
 ### Bracket Expressions
 Bracket expression is a method in regex that is going to match specific characters or paterns. For example: (alphabetic, numeric, special, symbols). All of the characters are defined with the brackets around the characters that presented for the match.
 Bracket Expression: []
 Code Snipet: [a-l0-9]
 
 
-### Greedy and Lazy Match
-### Boundaries
-### Back-references
-### Look-ahead and Look-behind
 ## Author
 
 https://github.com/afedoriouk
