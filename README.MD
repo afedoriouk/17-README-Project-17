@@ -8,20 +8,32 @@ Regular Expressions is widely used to validate phone numbers email addresses web
 ## Below are few example of the Regular Expressions in use:
 
 \d -> any 'meta' charachter (number)
+
 \d\d\d-\d\d\d-\d\d\d\d -> phone number
+
 (?)\d{3}[-.)]\d{3}[-.] \d{4}
 
 .* button (DOT STAR)
- . Dot= any charachter
- * Star= "wild card"
+
+. Dot= any charachter
+
+* Star= "wild card"
+* 
 [a-z]=any character a through z
+
 [^a-z] {3} = any three numbers 
+
 ^= anything but the selected characters
+
 [A-Z] = look for only capital letters
+
 \b[A-Za-z]{4}\b this expression means that this is matching four letter words with ONLY capital or lower case letters
+
 \w = inludes letters and numbers
+
 match email addresses:
 [\w]+@\w+\.(net|com|edu)
+
 "alternation" \. = (.) actual dot
 
 ## Regular Expressions USED FOR FORM VALIDATION
